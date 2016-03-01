@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8243FE39735155E9DE5061B9 /* Pods_testtruncation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD67D104DE16A4054E71C18 /* Pods_testtruncation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A3438D5A1C8532BD00482964 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3438D591C8532BD00482964 /* AppDelegate.swift */; };
 		A3438D5C1C8532BD00482964 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3438D5B1C8532BD00482964 /* ViewController.swift */; };
 		A3438D5F1C8532BD00482964 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3438D5D1C8532BD00482964 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50C7ED39C0A53656130D42CA /* Pods-testtruncation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testtruncation.release.xcconfig"; path = "Pods/Target Support Files/Pods-testtruncation/Pods-testtruncation.release.xcconfig"; sourceTree = "<group>"; };
 		A3438D561C8532BD00482964 /* testtruncation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testtruncation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3438D591C8532BD00482964 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3438D5B1C8532BD00482964 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		A3438D601C8532BD00482964 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3438D631C8532BD00482964 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3438D651C8532BD00482964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5E03FB62661A0D9BE94A5D0 /* Pods-testtruncation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testtruncation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testtruncation/Pods-testtruncation.debug.xcconfig"; sourceTree = "<group>"; };
+		FBD67D104DE16A4054E71C18 /* Pods_testtruncation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testtruncation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8243FE39735155E9DE5061B9 /* Pods_testtruncation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6624A3F5991B3DA46B5A7B1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBD67D104DE16A4054E71C18 /* Pods_testtruncation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A3438D4D1C8532BD00482964 = {
 			isa = PBXGroup;
 			children = (
 				A3438D581C8532BD00482964 /* testtruncation */,
 				A3438D571C8532BD00482964 /* Products */,
+				CBFF1B761345E70A639305BE /* Pods */,
+				6624A3F5991B3DA46B5A7B1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = testtruncation;
 			sourceTree = "<group>";
 		};
+		CBFF1B761345E70A639305BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5E03FB62661A0D9BE94A5D0 /* Pods-testtruncation.debug.xcconfig */,
+				50C7ED39C0A53656130D42CA /* Pods-testtruncation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3438D681C8532BD00482964 /* Build configuration list for PBXNativeTarget "testtruncation" */;
 			buildPhases = (
+				2CCC8DCB3B261AFC90393716 /* Check Pods Manifest.lock */,
 				A3438D521C8532BD00482964 /* Sources */,
 				A3438D531C8532BD00482964 /* Frameworks */,
 				A3438D541C8532BD00482964 /* Resources */,
+				BB42D1E2F658D36D76821DFA /* Embed Pods Frameworks */,
+				579732E198D5A2918E9E8F83 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CCC8DCB3B261AFC90393716 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		579732E198D5A2918E9E8F83 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testtruncation/Pods-testtruncation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB42D1E2F658D36D76821DFA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testtruncation/Pods-testtruncation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A3438D521C8532BD00482964 /* Sources */ = {
@@ -247,6 +322,7 @@
 		};
 		A3438D691C8532BD00482964 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5E03FB62661A0D9BE94A5D0 /* Pods-testtruncation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = testtruncation/Info.plist;
@@ -258,6 +334,7 @@
 		};
 		A3438D6A1C8532BD00482964 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50C7ED39C0A53656130D42CA /* Pods-testtruncation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = testtruncation/Info.plist;
@@ -286,6 +363,7 @@
 				A3438D6A1C8532BD00482964 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
